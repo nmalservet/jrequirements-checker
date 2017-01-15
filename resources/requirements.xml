@@ -1,0 +1,5 @@
+<xml>
+<!-- output file, can be an xml, json, html file -->
+<output.file>result.xml</output.file>
+
+</xml>
