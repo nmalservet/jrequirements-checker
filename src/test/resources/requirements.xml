@@ -1,0 +1,15 @@
+<xml>
+	<!-- here are your requirements -->
+	<requirements>
+		<requirement type="jdbcConnection" driver="org.mysql.MySQLDriver" connectionString="root:root@localhost"/>
+		<requirement type="folder" value="/var/www" />
+		<requirement type="file" value="readme.md"/>
+		<requirement type="file" value="/home/nicolas/NetBeans8.2/bin/netbeans.exe"/>
+	</requirements>
+	<!-- here is the output format -->
+	<output>
+		<format>console</format>
+		<format>xml</format>
+		<format></format>
+	</output>
+</xml>
