@@ -70,7 +70,7 @@ public class RequirementsChecker {
 	 */
 	public void printToFile(String result, String fileName) {
 		File file = new File(fileName);
-		System.out.println("TODO implement print to file");
+		System.out.println("TODO implement print to file"+file.getAbsolutePath());
 
 	}
 
