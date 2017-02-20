@@ -1,4 +1,4 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.loader;
 
 import java.util.ArrayList;
 import java.util.List;

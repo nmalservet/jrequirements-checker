@@ -1,6 +1,9 @@
-package eu.malservet;
+package eu.malservet.requirementchecker.loader;
 
-import eu.malservet.requirementschecker.FileRequirement;
+import java.io.File;
+import java.io.IOException;
+
+import eu.malservet.requirementschecker.requirements.FileRequirement;
 import junit.framework.TestCase;
 
 /**
@@ -21,8 +24,17 @@ public class FileRequirementTest extends TestCase{
 		FileRequirement fr2 = new FileRequirement("fr2","readme.md");
 		assertTrue(fr2.check());
 		//check if a file exists on the filesystem
-		FileRequirement fr3 = new FileRequirement("fr3","/home/nicolas/netbeans-8.2/bin/netbeans");
-		assertTrue("file on filesystem cannot ben found",fr3.check());
+		File f =  new File("test.txt");
+		try {
+			assertTrue("file cannot be created",f.createNewFile());
+		} catch (IOException e) {
+			fail(e.getMessage());
+		}
+		String path = f.getAbsolutePath();
+		FileRequirement fr3 = new FileRequirement("fr3",path);
+		assertTrue("file on filesystem cannot ben found:"+path,fr3.check());
+		f.delete();
+		assertFalse("file on filesystem can be found, but is deleteds:"+path,fr3.check());
 	}
 
 }

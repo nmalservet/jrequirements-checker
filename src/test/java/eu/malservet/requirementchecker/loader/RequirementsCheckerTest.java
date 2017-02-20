@@ -1,12 +1,12 @@
-package eu.malservet;
+package eu.malservet.requirementchecker.loader;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import eu.malservet.requirementschecker.FileRequirement;
-import eu.malservet.requirementschecker.Requirement;
-import eu.malservet.requirementschecker.RequirementsChecker;
-import eu.malservet.requirementschecker.Result;
+import eu.malservet.requirementschecker.loader.Requirement;
+import eu.malservet.requirementschecker.loader.RequirementsChecker;
+import eu.malservet.requirementschecker.ouput.Result;
+import eu.malservet.requirementschecker.requirements.FileRequirement;
 import junit.framework.TestCase;
 
 public class RequirementsCheckerTest extends TestCase {

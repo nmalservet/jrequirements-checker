@@ -1,4 +1,4 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.loader;
 
 /**
  * class to represent a property, used into a requirement.

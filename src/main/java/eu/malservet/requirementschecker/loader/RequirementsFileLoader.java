@@ -1,6 +1,7 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.loader;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,20 +17,21 @@ public class RequirementsFileLoader {
 
 	/**
 	 * load a file into resources.
+	 * @throws FileNotFoundException 
 	 */
-	public File load(String directory) {
+	public File load(String directory) throws FileNotFoundException {
 		URL url = this.getClass().getClassLoader().getResource(directory + "requirements.xml");
 		if (url != null) {
 			return new File(url.getPath());
 		} else {
-			return null;
+			throw new FileNotFoundException();
 		}
 	}
 
 	/**
 	 * load a file from classpath
 	 */
-	public File load() {
+	public File load() throws FileNotFoundException {
 		return this.load("");
 	}
 

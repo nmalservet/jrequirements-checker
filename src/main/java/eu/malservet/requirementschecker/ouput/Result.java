@@ -1,4 +1,6 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.ouput;
+
+import eu.malservet.requirementschecker.loader.Requirement;
 
 /**
  * store a result for a requirement after check operation

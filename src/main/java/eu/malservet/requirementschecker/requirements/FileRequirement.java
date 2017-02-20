@@ -1,8 +1,11 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.requirements;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import eu.malservet.requirementschecker.loader.Requirement;
+import eu.malservet.requirementschecker.loader.Requirement.RequirementType;
 
 /**
  * class to check a requirement of type file

@@ -1,4 +1,6 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.requirements;
+
+import eu.malservet.requirementschecker.loader.Requirement;
 
 /**
  * class to check a requirement of type jdbc

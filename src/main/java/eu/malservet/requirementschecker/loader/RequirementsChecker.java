@@ -1,8 +1,10 @@
-package eu.malservet.requirementschecker;
+package eu.malservet.requirementschecker.loader;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import eu.malservet.requirementschecker.ouput.Result;
 
 /**
  * main class. Check requirements described into your requirements file.<br>
